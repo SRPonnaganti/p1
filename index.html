@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TDS Virtual TA</title>
+  <style>
+    body { font-family: sans-serif; padding: 2em; background: #f8f9fa; }
+    h1 { color: #343a40; }
+    code { background-color: #e9ecef; padding: 2px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>TDS Virtual Teaching Assistant API</h1>
+  <p>This is a simple REST API that answers questions related to the <strong>Tools in Data Science</strong> course from IIT Madras.</p>
+
+  <h2>API Endpoint</h2>
+  <p><code>POST https://your-deployed-api.vercel.app/api/</code></p>
+
+  <h2>Request Format</h2>
+  <pre>{
+  "question": "Should I use gpt-4o-mini or gpt-3.5-turbo?",
+  "image": "base64 encoded image (optional)"
+}</pre>
+
+  <h2>Response Format</h2>
+  <pre>{
+  "answer": "Use gpt-3.5-turbo-0125...",
+  "links": [
+    { "url": "...", "text": "Reference link" }
+  ]
+}</pre>
+
+  <p>For more information, visit the <a href="https://github.com/YOUR_USERNAME/tds-virtual-ta" target="_blank">GitHub repository</a>.</p>
+</body>
+</html>
